@@ -1,0 +1,22 @@
+Problem-2: With a single integer as the input, generate the following until a = x [series of numbers as shown in below examples]
+
+Solution : 
+
+import java.util.Scanner;
+
+public class Problem2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number of odd values to display: ");
+        int a = sc.nextInt();
+        int current = 1;
+        for (int i = 1; i <= a; i++) {
+            System.out.print(current);
+            if (i < a) {
+                System.out.print(", ");
+            }
+            current += 2; 
+        }
+        sc.close();
+    }
+}
